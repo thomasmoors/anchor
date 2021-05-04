@@ -1,6 +1,6 @@
 # Laravel Anchor
 
-Wrap docker managment in a convienient Laravel package, just like Sail but with a different approach. Also make it usable in production.
+Wrap docker management in a convenient Laravel package, just like Sail but with a different approach. Also make it usable in production. Laravel Sail is nice, but fails on one of the biggest promises of Docker: consistency between environments, a.k.a. build once, run everywhere. 
 
 
 # Goals
