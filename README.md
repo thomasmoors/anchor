@@ -21,3 +21,9 @@ Wrap docker management in a convenient Laravel package, just like Sail but with 
 # Documentation
 
 https://thomasmoors.github.io/anchor/
+
+
+
+# Naming
+
+As most things Docker related get a nautical term or at least something related to boats, I thought it to be a good idea to use Anchor. As a bonus just like docker-compose you now can execute `anchor up` and `anchor down` which does exactly the same to the containers as it would do to a boat. 🙂
