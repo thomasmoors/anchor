@@ -20,21 +20,32 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 ## Support us
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/anchor.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/anchor)
+# Laravel Anchor
 
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+Wrap docker management in a convenient Laravel package, just like Sail but with a different approach. Also make it usable in production. Laravel Sail is nice, but fails on one of the biggest promises of Docker: consistency between environments, a.k.a. build once, run everywhere. 
 
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
-## Installation
+# Goals
 
-You can install the package via composer:
+- [ ] To enable all features in Laravel with the help of external services
+  - [ ] [Broadcasting/Websockets](https://github.com/beyondcode/laravel-websockets)
+  - [ ] [Development mail](https://github.com/mailhog/MailHog)
+  - [x] [Queues](https://redis.io/)
+  - [ ] [Task scheduling](https://hub.docker.com/r/willfarrell/crontab)
+  - [ ] Scout
+- [ ] To configure this package with just a config file
+- [ ] To support multiple environments with different services (e.g. xDebug in development)
+- [ ] To create smaller images than Sail by using Alpine based Linux images
+- [ ] Let's Encrypt support
+- [ ] docker-sync on Mac host
 
 ```bash
 composer require thomasmoors/anchor
 ```
 
-You can publish and run the migrations with:
+# Documentation
 
+https://thomasmoors.github.io/anchor/
 ```bash
 php artisan vendor:publish --provider="Thomasmoors\Anchor\AnchorServiceProvider" --tag="anchor-migrations"
 php artisan migrate
@@ -45,13 +56,10 @@ You can publish the config file with:
 php artisan vendor:publish --provider="Thomasmoors\Anchor\AnchorServiceProvider" --tag="anchor-config"
 ```
 
-This is the contents of the published config file:
 
-```php
-return [
-];
-```
+# Naming
 
+As most things Docker related get a nautical term or at least something related to boats, I thought it to be a good idea to use Anchor. As a bonus just like docker-compose you now can execute `anchor up` and `anchor down` which does exactly the same to the containers as it would do to a boat. 🙂
 ## Usage
 
 ```php
