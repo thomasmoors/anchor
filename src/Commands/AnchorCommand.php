@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Thomasmoors\Anchor\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class AnchorCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'anchor:generate';
 
     public $description = 'My command';
 
