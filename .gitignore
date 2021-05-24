@@ -3,7 +3,6 @@
 .php_cs.cache
 .php-cs-fixer.cache
 .phpunit.result.cache
-actions/checkout
 build
 composer.lock
 coverage
