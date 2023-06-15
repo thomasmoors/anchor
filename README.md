@@ -2,7 +2,7 @@
 
 Wrap docker management in a convenient Laravel package, just like Sail but with a different approach. Also make it usable in production. Laravel Sail is nice, but fails on one of the biggest promises of Docker: consistency between environments, a.k.a. build once, run everywhere. 
 
-![comic](https://wizardzines.com/comics/why-containers/why-containers.png "Why containers")
+![comic](https://wizardzines.com/images/uploads/why-containers.png "Why containers")
 
 Awesome comic by Julia Evans, please consider [supporting her](https://wizardzines.com/zines/containers/)
 
